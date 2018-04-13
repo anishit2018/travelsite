@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+<title>Travel, Exploration, Booking WordPress Theme &#8211; Exploore &#8211; Travel, Exploration, Booking WordPress Theme</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/inner.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/index2.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/index3.css" media="only screen and (max-width: 768px)"/>
+<link rel="stylesheet" type="text/css" href="css/index4.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/index5.css" media="all"/>
+<link rel='stylesheet' id='slzexploore-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%2C900%7CMontserrat%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all'/>
+
+ <!-- popup for register-->
+
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <script src="js/pop-jquery.min.js"></script>
+    <script src="js/remodal.js"></script>
+    <script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+  
+  $('[data-remodal-id=modal2]').remodal({
+    modifier: 'with-red-theme'
+  });
+</script>
+
+    <!-- popup end for register-->
+
+    <!-- crop section start-->
+
+    <link href="crop/imgareaselect-default.css" rel="stylesheet" media="screen">
+    <!-- <link rel="stylesheet" href="crop/bootstrap.min.css"> -->
+    <script src="crop/jquery.min.js"></script>
+    <script src="crop/bootstrap.min.js"></script>
+    <script src="crop/jquery.imgareaselect.js"></script>
+    <script src="crop/jquery.awesome-cropper.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('#sample_input').awesomeCropper(
+        { width: 150, height: 150, debug: true }
+        );
+    });
+    </script>
+
+    <!-- crop section end-->
+	
+	
+<script src='js/index.js' type="text/javascript"></script>
+<script src='js/index2.js' type="text/javascript"></script>
+</head>
+
+<body class="single single-slzexploore_car postid-707  sticky-enable  searchbar-type-2 wpb-js-composer js-comp-ver-5.0.1 vc_responsive" data-class="header-five">
+<div class="body-wrapper header-five">
+<!-- MENU MOBILE-->
+<div class="wrapper-mobile-nav">
+  <div class="header-topbar">
+    <div class="topbar-search search-mobile">
+      <form role="search" method="get" class="search-form" action="#">
+        <input type="text" placeholder="Search here..." class="search-field search-input form-control searchbox" name="s"/>
+        <button type="submit" class="searchbutton btn-search fa fa-search"></button>
+      </form>
+    </div>
+  </div>
+  
+</div>
+<!-- WRAPPER CONTENT-->
+<div class="wrapper-content"> 
+  <!-- HEADER-->
+  <header>
+    <div class="bg-transparent header-01">
+      <div class="header-topbar gal-det">
+        <div class="container">
+            <div >
+              <div class="col-md-4">  <img src="images/Logo.png" alt="" width="150"></div>
+              <div class="col-md-4"> <ul class="topbar-left list-unstyled list-inline pull-left">
+                <li><a href="#" class="link  facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="link  google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="link  twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="link  instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              </ul></div>
+              <div class="col-md-4"> <ul class="topbar-right pull-right list-unstyled list-inline login-widget">
+                <li> <a href="javascript:void(0)" class="country dropdown-text"> <span>Custom Tour </span> <i class="topbar-icon icons-dropdown fa fa-angle-down"></i> </a>
+                  <ul class="dropdown-topbar list-unstyled hide">
+                    <li> <a href="#" class="link">Budget Calculator</a> </li>
+                    <li> <a href="#" class="link">Distance Calculator</a> </li>
+                    <li> <a href="#" class="link">Custom Tour Creator</a> </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="monney dropdown-text"><span>Reviews</span></a> </li>
+                <li><a href="#login1" class="item"><i class="topbar-icon icons-dropdown fa fa-lock"></i> Login</a></li>
+          <li><a href="#register1" class="item"><i class="topbar-icon icons-dropdown fa fa-user"></i> Register</a></li>
+              </ul>
+              
+              
+    
+    <div class="remodal" data-remodal-id="login1" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+            <div>
+                  <h2 id="modal1Title">Sign in to your account! </h2>
+                  <p id="modal1Desc">
+              <div class="login-table rlp-table">
+                <form method="post">
+                  <div class="login-form bg-w-form rlp-form">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="col-md-12">
+                          <input id="regemail" placeholder="Email" name="email" class="reg-inputs"  value="" type="email">
+                        </div>
+                        <div class="col-md-12">
+                          <input id="regpassword" name="password" placeholder="password" class="reg-inputs"  type="password">
+                        </div>
+                        <div class="col-md-6">
+                          <input id="remember" name="rememberme" class="check" type="checkbox">
+                          <label for="remember" class="type-checkbox"> Remember me </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="col-md-12"><a href="#">
+                          <button class="loginBtn loginBtn--facebook"> Login with Facebook</button>
+                          </a></div>
+                        <div class="col-md-12"><a href="#">
+                          <button class="loginBtn loginBtn--google">Login with Google</button>
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="login-submit">
+                    <input id="_wpnonce" name="_wpnonce" value="d5871a9231" type="hidden">
+                    <input name="_wp_http_referer" value="#" type="hidden">
+                    <input class="btn btn-maincolor" name="login" value="sign in" type="submit">
+                    <a href="#" class="btn btn-cancel">Cancel</a> </div>
+                </form>
+                <p class="title-sign-in"> Don't have a exploore account yet?<a href="#register1" class="link signin">create now!</a> </p>
+              </div>
+                  </p>
+                </div>
+          </div>
+
+    <div class="remodal" data-remodal-id="register1" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+            <div>
+                  <h2 id="modal1Title">create your account and join with us! </h2>
+                  <p id="modal1Desc">
+              <div class="register-table rlp-table">
+                <form method="post" class="register" id="register_member" novalidate>
+                <div class="register-form bg-w-form rlp-form">
+                <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-12">
+                    <input id="regname" placeholder="Username" class="reg-inputs" value="" type="text">
+                  </div>
+                  <div class="col-md-12">
+                    <input id="regemail" placeholder="Email" class="reg-inputs" value="" type="email">
+                  </div>
+                  <div class="col-md-12">
+                    <input id="password" placeholder="Password" class="reg-inputs" type="password">
+                  </div>
+                  <div class="col-md-12">
+                    <input id="reregpassword" placeholder="Confirm Password" class="reg-inputs" >
+                  </div>
+                  <div class="col-md-12">
+                    <div class="selectdiv ">
+                      <label>
+                        <select>
+                          <option selected> Select</option>
+                          <option>Travel Agency</option>
+                          <option>Hotels</option>
+                          <option>Genarel </option>
+                          <option>Tour Guide</option>
+                          <option>Side seen organizer</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-12"> <img src="images/Captcha.png" width="100%"> </div>
+                  <div class="col-md-12">
+                    <div class="register-terms">
+                      <div class="checkbox-terms">
+                        <input value="yes" name="agree" id="agree" class="" aria-invalid="false" data-validation-error-msg-required="To register for membership, you must agree to the terms and conditions of our." type="checkbox">
+                        <div class="content"> I agree to the <a href="#" target="_blank">terms &amp; conditions</a>. </div>
+                        <label for="agree" class="error"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                <div>
+                <label for="regemail" class="control-label form-label"> Photo (MAX 10mb) <span class="required">*</span> </label>
+                <form role="form">
+                 
+                  
+                  <div class="form-group file-area">
+    <input id="sample_input" type="hidden" name="test[image]" />
+    <div class="file-dummy">
+      <div class="default">Please Select User Image</div>
+    </div>
+  </div>
+  
+  
+  
+                </form>
+              </div>
+                </div>
+          </div>
+            </div>
+        <div class="register-submit">
+
+
+
+
+              <input id="_wpnonce" name="_wpnonce" value="f034b613ef" type="hidden">
+              <input name="_wp_http_referer" value="#" type="hidden">
+              <a href="#" class="btn btn-cancel">Cancel</a>
+              <input class="btn btn-register btn-maincolor" name="register" value="Create Account" type="submit">
+            </div>
+        </form>
+      </div>
+          </p>
+        </div>
+  </div>
+              
+              </div>
+            </div>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  <div id="wrapper-content"> 
+    <!-- MAIN CONTENT-->
+    <div class="main-content"> 
+      <!-- Page Title -->
+      
+      <div class="car-detail-main">
+      
+      <div class="gallery_bgs">
+          
+          
+          
+          
+          
+          
+          
+          	<div class="back-search"> <a href="gallery.html"><i class="fa fa-chevron-circle-left"></i> Back to Home</a></div>
+          
+          
+          
+            <div class="gallery_img"><img src="images/hotelbeauti-800x540.jpg"></div>
+            <a href="#" class="left_arrow"><img src="images/Left_arrow.png"></a> <a href="#" class="right_arrow"><img src="images/right_arrow.png"></a> 
+            
+            
+            <div class="tham">
+                	<ul>
+                    	<li> <a href="#"><img src="images/hotelbeauti-800x540.jpg"></a></li>
+                        <li> <a href="#"><img src="images/hotelbeauti-800x540.jpg"></a></li>
+                        <li> <a href="#"><img src="images/hotelbeauti-800x540.jpg"></a></li>
+                        <li> <a href="#"><img src="images/hotelbeauti-800x540.jpg"></a></li>
+                        <li> <a href="#"><img src="images/hotelbeauti-800x540.jpg"></a></li>
+                        <li> <a href="#"><img src="images/hotelbeauti-800x540.jpg"></a></li>
+                    </ul>
+                
+                </div>
+            
+             <div class="cl"></div>
+             
+             <div class="fr"> <a href="#"><img src="images/like.png" width="50"></a> </div>
+            
+            </div>
+        <div class="container">
+         <div class="car-detail-main">
+        <div class="row">
+          
+            
+            	
+            
+           
+            
+            
+            
+        </div>
+        <div class="container">
+          <div class="wrapper-car-detail">
+            <div class="row">
+              <div class="section section-padding page-detail padding-top padding-bottom">
+                <div class="container">
+                  <div class="row">
+                    <div class="gallery_com">
+                    
+                    
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                          <div class="col-md-10 col-xs-12 com-wrap">
+                            <div class="com-name"><a href="#">soumitra</a></div>
+                            <p> nature</p>
+                          </div>
+                        </div>
+                        <div class="view-wrap">
+                          <div class="com-view"> <a href="#">View 65 previous comments </a></div>
+                          <div class="row com-cont">
+                            <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                            <div class="col-md-10 col-xs-12 com-wrap2">
+                              <div class="com-name2"><a href="#">soumitra</a></div>
+                              <p> Great authentic image, very original! I am keen to license this image among others. Please contact me via artists@picsastock.com. Regards, S.Harry</p>
+                            </div>
+                          </div>
+                          <div class="row com-cont">
+                            <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                            <div class="col-md-10 col-xs-12 com-wrap2">
+                              <div class="com-name2"><a href="#">soumitra</a></div>
+                              <p> Great authentic image, very original! I am keen to license this image among others. Please contact me via artists@picsastock.com. Regards, S.Harry</p>
+                            </div>
+                          </div>
+                          <div class="row com-cont">
+                            <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                            <div class="col-md-10 col-xs-12 com-wrap2">
+                              <div class="com-name2"><a href="#">soumitra</a></div>
+                              <p> Great authentic image, very original! I am keen to license this image among others. Please contact me via artists@picsastock.com. Regards, S.Harry</p>
+                            </div>
+                          </div>
+                          <div class="row com-cont">
+                            <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                            <div class="col-md-10 col-xs-12 com-wrap2">
+                              <div class="com-name2"><a href="#">soumitra</a></div>
+                              <p> Great authentic image, very original! I am keen to license this image among others. Please contact me via artists@picsastock.com. Regards, S.Harry</p>
+                            </div>
+                          </div>
+                          <div class="row com-cont">
+                            <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                            <div class="col-md-10 col-xs-12 com-wrap2">
+                              <div class="com-name2"><a href="#">soumitra</a></div>
+                              <p> Great authentic image, very original! I am keen to license this image among others. Please contact me via artists@picsastock.com. Regards, S.Harry</p>
+                            </div>
+                          </div>
+                          <div class="row com-cont">
+                            <div class="col-md-2 col-xs-12 com-img"><img src="images/avatar-1-200x200.jpg" width="100%" ></div>
+                            <div class="col-md-10 col-xs-12 com-wrap2">
+                              <div class="com-name2"><a href="#">soumitra</a></div>
+                              <p> Great authentic image, very original! I am keen to license this image among others. Please contact me via artists@picsastock.com. Regards, S.Harry</p>
+                            </div>
+                          </div>
+                          <div>
+                            <form action="#" method="post" id="commentform" class="comment-form">
+                              <textarea id="comment" name="comment" required class="com-form" placeholder="Add a comment"></textarea>
+                              <button name="submit" id="submit" type="submit" data-hover="SEND NOW" class="btn btn-slide"><span class="text">Send Message</span><span class="icons fa fa-long-arrow-right"> </span></button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                      
+                      <div class="col-md-6">
+                      
+                      		<div class="com-wrap1">
+                            	 <div class="col-md-6">
+                                 <div class="row">
+                                 	<div class="col-md-4 views1"><span>217,004</span> <br>views</div>
+                                    <div class="col-md-4 views1"><span>1,653</span> <br>faves</div>
+                                    <div class="col-md-4 views1"><span>119</span> <br>comments</div>
+                                 </div>
+                                 
+                                 </div>
+                                 <div class="col-md-6 taken"> Taken on December 26, 2014 </div>
+                                 <div class="cl"></div>
+                                 
+                            
+                            </div>
+                      
+                      
+                      <div class="com-wrap1">
+                      		<div class="col-md-6">
+                            <div class="row">
+                            	
+                                <div class="col-md-5 cameras"> <i class="fa fa-camera" aria-hidden="true"></i></div>
+                                 <div class="col-md-7 cam-text2"> <span>Canon EOS 7D</span>30mm</div>
+
+                              
+                            </div>
+                            
+                            <div class="cam-gap">
+                            <div class="row">
+                             <div class="cam-text"> <img src="images/focal_length.png" width="20" height="20" > <span> Focal length - </span> 30.0 mm</div>
+                             <div class="cam-text"> <img src="images/f-value.png" width="20" height="20" > <span> F value - </span> ƒ/6.3</div>
+                             <div class="cam-text"> <img src="images/Shutter.png" width="20" height="20" > <span> Shutter Speed - </span> 30mm</div>
+                             <div class="cam-text"> <img src="images/iso.png" width="20" height="20" > <span> ISO - </span> 30mm</div>
+                             <div class="cam-text"> <img src="images/Exposure.png" width="20" height="20" > <span> Exposure - </span> 30mm</div>
+                             <div class="cam-text"> <img src="images/Flash.png" width="20" height="20" > <span> Flash - </span> 30mm</div>
+                             <div class="cam-text"> <img src="images/Lens.png" width="20" height="20" > <span> Lens Model - </span> 30mm</div>
+                             </div>
+                            
+                            </div>
+                            
+                            </div>
+                            
+                            
+                            
+                            
+                            <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d429259.2201806537!2d-70.3859773671875!3d-32.80319099999999!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1522667956822" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                             <div class="cl"></div>
+                      </div>
+                      
+                      
+                      <div class="com-wrap1">
+                      		
+                          <div class="related">Related Photos </div>  
+                          
+                          <div>
+                          
+                          	<div class="row related-photos">
+                            	<ul>
+                                	<li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                    <li> <a href="#"><img src="images/avatar-1.jpg"> </a> </li>
+                                </ul>
+                                
+                                
+                                
+                                
+                            </div>
+                            
+                          </div>
+                            
+                            
+                            
+                            
+                            
+                      </div>
+                      
+                      
+                      
+                      </div>
+                      
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- MAIN CONTENT--> 
+  </div>
+  <!-- FOOTER-->
+  <footer>
+    <div class="footer-main-container">
+      <div class="footer-main padding-top padding-bottom ">
+        <div class="container">
+          <div class="footer-main-wrapper"> <a href="#" class="logo-footer"><img src="images/Logo.png" alt="Logo Footer" class="img-responsive" /></a>
+            <div class="row">
+              <div class="col-2">
+                <div id="footer_c1" class="footer-area col-md-3 col-xs-5">
+                  <div id="slzexploore_contact-1" class="widget_slz_contact slz-widget widget widget-footer">
+                    <div class="contact-us-widget widget">
+                      <div class="title-widget">Contact us</div>
+                      <div class="content-widget">
+                        <div class="info-list">
+                          <div><i class="icons fa fa-map-marker"></i><span>132, My Street, Kingston, New York 12401</span></div>
+                          <div><i class="icons fa fa-phone"></i><span>270 - 188 - 6026</span></div>
+                          <div><i class="icons fa fa-envelope-o"></i><a class="link" href="mailto:domain@expooler.com"><span>domain@expooler.com</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="slzexploore_newsletter-1" class="widget_slzexploore_newsletter slz-widget widget widget-footer">
+                    <div class="form-email">
+                      <p class="text">Sign up for our mailing list to get latest updates and offers.</p>
+                      <script type="text/javascript">
+//<![CDATA[
+if (typeof newsletter_check !== "function") {
+window.newsletter_check = function (f) {
+var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+if (!re.test(f.elements["ne"].value)) {
+alert("The email is not correct");
+return false;
+}
+for (var i=1; i<20; i++) {
+if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
+alert("");
+return false;
+}
+}
+if (f.elements["ny"] && !f.elements["ny"].checked) {
+alert("You must accept the privacy statement");
+return false;
+}
+return true;
+}
+}
+//]]>
+</script>
+                      <form action="#" onsubmit="return newsletter_check(this)" method="post">
+                        <div class="input-group">
+                          <input type="hidden" name="nr" value="widget"/>
+                          <input class="form-control form-email-widget" type="email" required name="ne" placeholder="Email address" onclick="if (this.defaultValue==this.value) this.value=''" onblur="if (this.value=='') this.value=this.defaultValue"/>
+                          <span class="input-group-btn-custom">
+                          <button type="submit" class="btn-email">&#10004;</button>
+                          </span></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div id="footer_c2" class="footer-area col-md-2 col-xs-3">
+                  <div id="slzexploore_custom_link-1" class="widget_slz_widget_custom_link slz-widget widget widget-footer">
+                    <div class="booking-widget widget text-center">
+                      <div class="title-widget">Book Now</div>
+                      <div class="content-widget">
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="link">Flight</a></li>
+                          <li><a href="#" class="link">Tours</a></li>
+                          <li><a href="#" class="link">Packages</a></li>
+                          <li><a href="#" class="link">Transfer</a></li>
+                          <li><a href="#" class="link">Car Rent</a></li>
+                          <li><a href="#" class="link">Cruises</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="footer_c3" class="footer-area col-md-2 col-xs-4">
+                  <div id="slzexploore_tour-2" class="widget_slz_widget_tour slz-widget widget widget-footer">
+                    <div class="explore-widget widget">
+                      <div class="title-widget">Exploore</div>
+                      <div class="content-widget">
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="link">Madrid Tour</a></li>
+                          <li><a href="#" class="link">Stockholm City</a></li>
+                          <li><a href="#" class="link">Roma City</a></li>
+                          <li><a href="#" class="link">Shanghai City</a></li>
+                          <li><a href="#" class="link">Tokyo City</a></li>
+                          <li><a href="#" class="link">Paris City</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <div id="footer_c4" class="footer-area col-md-2 col-sm-5 col-xs-6">
+                  <div id="slzexploore_accommodation-2" class="widget_slz_widget_accommodation slz-widget widget widget-footer">
+                    <div class="explore-widget widget">
+                      <div class="title-widget">Top Deals</div>
+                      <div class="content-widget">
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="link">Edemil Hotel</a></li>
+                          <li><a href="#" class="link">Turhal Hotel</a></li>
+                          <li><a href="#" class="link">Kadirly Hotel</a></li>
+                          <li><a href="#" class="link">Sarina Hotel</a></li>
+                          <li><a href="#" class="link">Amasya Hotel</a></li>
+                          <li><a href="#" class="link">Matel Hotel</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="footer_c5" class="footer-area col-md-3 col-sm-7 col-xs-6">
+                  <div id="slzexploore_gallery-1" class="widget_slzexploore_gallery slz-widget widget widget-footer">
+                    <div class="title-widget">Destinations</div>
+                    <div class="destination-widget widget">
+                      <div class="content-widget ">
+                        <ul class="list-unstyled list-inline">
+                          <li><a class="thumb" href="#"><img width="100" height="100" src="images/hotelbeauti-100x100.jpg" class="img-responsive" alt="" /></a></li>
+                          <li><a class="thumb" href="#"><img width="100" height="100" src="images/316_langham_modern_Exterior-100x100.jpg" class="img-responsive" alt=""/></a></li>
+                          <li><a class="thumb" href="#"><img width="100" height="100" src="images/280821-100x100.jpg" class="img-responsive" alt="" /></a></li>
+                          <li><a class="thumb" href="#"><img width="100" height="100" src="images/hanoi-top-luxury-hotel-100x100.jpg" class="img-responsive" alt=""/></a></li>
+                          <li><a class="thumb" href="#"><img width="100" height="100" src="images/inntel-zaandam-bigheader1-100x100.jpg" class="img-responsive" alt="" /></a></li>
+                          <li><a class="thumb" href="#"><img width="100" height="100" src="images/Palais-Namaskar-luxury-dream-hotels-01-100x100.jpg" class="img-responsive" alt=""/></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hyperlink ">
+      <div class="container">
+        <div class="slz-shortcode slide-logo-wrapper ">
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-02.png" class="img-responsive" alt="logo-02" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-01.png" class="img-responsive" alt="logo-01" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-06.png" class="img-responsive" alt="logo-06" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-05.png" class="img-responsive" alt="logo-05" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-04.png" class="img-responsive" alt="logo-04" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-03.png" class="img-responsive" alt="logo-03" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-02.png" class="img-responsive" alt="logo-02" /> </a> </div>
+          <div class="logo-item"> <a href="#" class="link"> <img width="110" height="90" src="images/logo-01.png" class="img-responsive" alt="logo-01" /> </a> </div>
+        </div>
+        <div class="social-footer">
+          <ul class="list-inline list-unstyled">
+            <li><a href="#" class="link facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="link google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="link twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="link instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="link dribbble" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#" class="link pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <div class="name-company"><span>© Designed by SWLABS.</span></div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="slz-button-hove-text hide" data-text="SEND NOW"></div>
+<!-- End #page -->
+<div id="back-top"><a href="#top" class="link"><i class="fa fa-angle-double-up"></i></a></div>
+<link rel="stylesheet" type="text/css" href="css/index6.css" media="all"/>
+<script type='text/javascript' src='js/jquery.form.min.js'></script> 
+<script type='text/javascript' src='js/scripts.js'></script> 
+<script type='text/javascript' src='js/bootstrap-datepicker.min.js'></script> 
+<script type='text/javascript' src='js/jquery.mousewheel-pack.js'></script> 
+<script type='text/javascript' src='js/jquery.fancybox.js'></script> 
+<script type='text/javascript' src='js/jquery.fancybox-buttons.js'></script> 
+<script type='text/javascript' src='js/jquery.fancybox-thumbs.js'></script> 
+<script type='text/javascript' src='js/please-wait.min.js'></script> 
+<script type='text/javascript' src='js/wow.min.js'></script> 
+<script type='text/javascript' src='js/jquery.directional-hover.js'></script> 
+<script type='text/javascript' src='js/isotope/isotope.min.js'></script> 
+<script type='text/javascript' src='js/jquery.selectbox-0.2.js'></script> 
+<script type='text/javascript' src='js/select2.min.js'></script> 
+<script type='text/javascript' src='js/plus-minus-input.js'></script> 
+<script type='text/javascript' src='js/TweenMax.min.js'></script> 
+<script type='text/javascript' src='js/jquery-parallax.js'></script> 
+<script type='text/javascript' src='js/slick.min.js'></script> 
+<script type='text/javascript' src='js/jquery.nstSlider.min.js'></script> 
+<script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBBU_zpkBrGVM46XQG3dUTz87S2Ig8wNvk&#038;libraries=places&#038;ver=4.5.3'></script> 
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajaxurl = "http:\/\/wp.swlabs.co\/exploore\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script> 
+<script type='text/javascript' src='js/markerclusterer.js'></script> 
+<script type='text/javascript' src='js/slzexploore-core-form.js'></script> 
+<script type='text/javascript' src='js/slzexploore-core-shortcode.js'></script> 
+<script type='text/javascript' src='js/slzexploore-core-maps.js'></script> 
+<script type='text/javascript' src='js/slzexploore-core-multi-maps.js'></script> 
+<script type='text/javascript' src='js/slzexploore-core-booking.js'></script> 
+<script type='text/javascript' src='js/jquery.blockUI.min.js'></script> 
+<script type='text/javascript' src='js/woocommerce.min.js'></script> 
+<script type='text/javascript' src='js/jquery.cookie.min.js'></script> 
+<script type='text/javascript' src='js/cart-fragments.min.js'></script> 
+<script type='text/javascript' src='js/jquery.prettyPhoto.min.js'></script> 
+<script type='text/javascript' src='js/jquery.prettyPhoto.init.min.js'></script> 
+<script type='text/javascript' src='js/jquery.selectBox.min.js'></script> 
+<script type='text/javascript' src='js/jquery.yith-wcwl.js'></script> 
+<script type='text/javascript' src='js/skip-link-focus-fix.js'></script> 
+<script type='text/javascript' src='js/bootstrap.min.js'></script> 
+<script type='text/javascript' src='js/video-bg.js'></script> 
+<script type='text/javascript' src='js/browser.js'></script> 
+<script type='text/javascript' src='js/api.js'></script> 
+<script type='text/javascript' src='js/jquery.validate.min.js'></script> 
+<script type='text/javascript' src='js/slzexploore-main.js'></script> 
+<script type='text/javascript' src='js/slzexploore-custom.js'></script> 
+<script type='text/javascript' src='js/slzexploore-ajax.js'></script> 
+<script type='text/javascript' src='js/jquery.form.min2.js'></script> 
+<script type='text/javascript' src='js/scripts2.js'></script> 
+<script type='text/javascript' src='js/slzexploore-woocommerce.js'></script> 
+<script type='text/javascript' src='js/validate.js'></script> 
+<script type='text/javascript' src='js/wp-embed.min.js'></script> 
+<script type='text/javascript' src='js/js_composer_front.min.js'></script> 
+<script type='text/javascript' src='js/waypoints.min.js'></script> 
+<script type='text/javascript' src='js/slz-livesetting.js'></script>
+</body>
+</html>
+<!-- WP Fastest Cache file was created in 10.915102005 seconds, on 22-02-18 12:10:59 -->
