@@ -1,0 +1,12 @@
+name: Travelsite
+type: theme
+description: 'A custom travelsite theme.'
+core: 8.x
+libraries:
+  - travelsite/global-styling
+  - travelsite/global-scripts
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
